@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --white-color: white;
+  --red-color: yellow;
+  --blue-color: orange;
+}
+
+body {
+  background:black;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1,h2,h3,h4,p,address,label {
+  color: var(--white-color);
+  font-family: "Electrolize", serif;
+}
+
+h2.box{
+  margin: 15px, 
+}
+
+.highlighted {
+  color: var(--white-color)
+}
+
+.highlight-cell {
+  color: var(--green-color)
+}
+
+table {
+  font-family: "Trebuchet MS";
+  width: 100%;
+  max-width: 800px;
+}
+
+a:hover {
+  color: blue;
+}
+
+table th {
+  background-color: #87ceeb;
+}
+
+table tr:nth-child(2n) {
+  background-color: #87ceeb;
+}
+
+table tr:nth-child(2n+1) {
+  background-color: #caebfa;
+}
+
+.Dplanets {
+  color: white;
+}
+
+.dp-content {
+  display: none;
+}
+
+.dp-content.visible {
+  display: block;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 10px 50px;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 15px;
+}
+
+.form-grid submit {
+  background-color: grey;
+  color: black;
+  border: 0;
+  padding: 5px;
+}
+
+.form-grid .error {
+  color: red;
+  display: none;
+}
+
+.form-grid .error.visible {
+  display: block;
+}
+
+footer {
+  border-top: 1px solid #aaaaaa;
+  margin: 30px, 0;
+  padding-top: 15px;
+}
+
+footer h4 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.socials {
+  font-size: 2rm;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  width: 220px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+footer address {
+  color: white;
+  font-style: normal;
+  margin-bottom: 15px;
+}
+
+address {
+  text-decoration:none;
+}
+
+footer a.first {
+  padding-right: 20px;
+  border-right: 1px solid #aaaaaa;
+  text-decoration:none;
+}
+
+footer a.last {
+  padding-left: 20px;
+}
+
+.go-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
